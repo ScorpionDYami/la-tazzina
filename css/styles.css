@@ -193,5 +193,93 @@ body{
                 }
             }
         }
+
+        #reserve{
+            display: block;
+            max-width: 100%;
+            place-items: center;
+            margin: 0 auto;
+            padding: 100px 0;
+            background-color: var(--secondary-color);
+
+            h2{
+                font-family: var(--font-anton);
+                font-size: 40px;
+                color: var(--primary-color);
+                margin-bottom: 20px;
+            }
+
+            .reserve-form{
+                display: grid;
+                gap: 10px;
+                place-items: left;
+                width: 40%;
+                font-family: var(--font-montserrat);
+                font-size: 20px;
+
+                input{
+                    height: 25px;
+                    border-radius: 5px;
+                }
+
+                .btn-reservar{
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
+                    font-family: var(--font-anton);
+                    height: 35px;
+
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    border-radius: 20px;
+                    transition: filter 0.3s, transform 0.3s;
+
+                    &:hover{
+                        filter: brightness(1.2);
+                        filter: drop-shadow(2px 4px 6px var(--primary-color));
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+        }
+    }
+
+    footer{
+        height: 50px;
+        width: 100%;
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        border-top: 3px solid var(--secondary-color);
+        background-color: var(--primary-color);
+
+        p{
+            font-family: var(--font-montserrat);
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+
+            img{
+                width: 30px;
+                height: 30px;
+                transition: filter 0.3s, transform 0.3s;
+
+                &:hover{
+                    filter: drop-shadow(3px 3px var(--secondary-color));
+                    transform: scale(1.05);
+                }
+            }
+        }
     }
 }
