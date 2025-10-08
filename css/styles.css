@@ -24,7 +24,6 @@ body{
 
         .menu{
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
             align-items: center;
             height: 50px;
@@ -33,6 +32,7 @@ body{
             font-family: var(--font-anton);
 
             .logotipo{
+                cursor: pointer;
                 height: 40px;
             }
 
@@ -44,7 +44,7 @@ body{
                 border: 1px solid var(--secondary-color);
                 letter-spacing: 4px;
                 border-radius: 20px;
-                transition: filter 0.3s, transform 0.3s;
+                transition: 0.3s;
 
                 &:hover{
                     background-color: var(--secondary-color);
@@ -57,19 +57,17 @@ body{
     }
     main{
         #presentation{
-            max-width: 100%;
             min-height: 100vh;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             place-items: center;
-            margin: 0 auto;
             background-color: var(--secondary-color);
 
             img{
                 justify-self: center;
-                width: auto;
+                max-width: 100%;
                 height: 580px;
-                rotate: 90deg;
+                transform: rotate(90deg);
                 border-radius: 20px;
             }
 
@@ -101,7 +99,7 @@ body{
                     background-color: var(--primary-color);
                     padding: 10px 20px;
                     border-radius: 20px;
-                    transition: filter 0.3s, transform 0.3s;
+                    transition: 0.3s;
 
                     &:hover{
                         filter: brightness(1.2);
@@ -118,14 +116,12 @@ body{
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             place-items: center;
-            margin: 0 auto;
             background-color: var(--primary-color);
 
             div{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                place-items: center;
 
                 h2{
                     font-family: var(--font-anton);
@@ -155,7 +151,7 @@ body{
                 .card{
                     background-color: var(--secondary-color);
                     border-radius: 20px;
-                    transition: transform 0.3s, box-shadow 0.3s;
+                    transition: 0.3s;
 
                     img{
                         width: auto;
@@ -195,11 +191,10 @@ body{
         }
 
         #reserve{
-            display: block;
             max-width: 100%;
+            height: 539px;
+            place-content: center;
             place-items: center;
-            margin: 0 auto;
-            padding: 100px 0;
             background-color: var(--secondary-color);
 
             h2{
@@ -218,7 +213,8 @@ body{
                 font-size: 20px;
 
                 input{
-                    height: 25px;
+                    height: 30px;
+                    border: 3px solid var(--primary-color);
                     border-radius: 5px;
                 }
 
@@ -227,14 +223,14 @@ body{
                     color: var(--secondary-color);
                     font-family: var(--font-anton);
                     height: 35px;
-
+                    border: none;
+                    cursor: pointer;
                     font-size: 20px;
                     letter-spacing: 4px;
                     border-radius: 20px;
-                    transition: filter 0.3s, transform 0.3s;
+                    transition: 0.3s;
 
                     &:hover{
-                        filter: brightness(1.2);
                         filter: drop-shadow(2px 4px 6px var(--primary-color));
                         transform: scale(1.05);
                     }
@@ -273,7 +269,7 @@ body{
             img{
                 width: 30px;
                 height: 30px;
-                transition: filter 0.3s, transform 0.3s;
+                transition: 0.3s;
 
                 &:hover{
                     filter: drop-shadow(3px 3px var(--secondary-color));
@@ -283,3 +279,4 @@ body{
         }
     }
 }
+
