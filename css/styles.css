@@ -280,6 +280,7 @@ body{
                 .container{
                     grid-template-columns: 1fr;
                     padding: 15% 0;
+                    gap: 15px;
 
                     .presentation-txt{
                         h1{
@@ -316,8 +317,8 @@ body{
             }
             #reserve{
                 .container{
-                    min-height: auto;
-                    padding: 50px 20px;
+                    min-height: 660px;
+                    padding: 0 20px;
                     width: 100%;
 
                     h2{
