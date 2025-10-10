@@ -13,74 +13,83 @@
 <body>
     <header>
         <nav class="menu">
-            <img src="images/logotipo.png" alt="Logotipo de La Tazzina" class="logotipo">
-            <a class="reservar" href="#reserve">Reservar</a>
+            <a href="#presentation">
+                <img src="images/logotipo.png" alt="Logotipo de La Tazzina" class="logo">
+            </a>
+            <a class="btn-reserve" href="#reserve">Reservar</a>
         </nav>
     </header>
     <main>
         <section id="presentation">
-            <img src="images/s1.jpg" alt="Granos de café, café molido y café con leche">
-            <div>
-                <h1>Despierta Tus Sentidos en Cada Sorbo</h1>
-                <p>Descubre el equilibrio perfecto entre aroma, sabor y tradición. En La Tazzina Boutique Coffee, cada taza está elaborada con pasión y los mejores granos del mundo.</p>
-                <a href="">Más información</a>
+            <div class="container">
+                <div>
+                    <img src="images/s1.jpg" alt="Granos de café, café molido y café con leche" class="presentation-img">
+                </div>
+                <div class="presentation-txt">
+                    <h1>La Tazzina: Despierta Tus Sentidos en Cada Sorbo</h1>
+                    <p>Descubre el equilibrio perfecto entre aroma, sabor y tradición. En La Tazzina Boutique Coffee, cada taza está elaborada con pasión y los mejores granos del mundo.</p>
+                    <a href="https://blacksheepcoffee.co.uk/" target="_blank" rel="nofollow noreferrer noopener" class="btn-info">Más información</a>
+                </div>
             </div>
         </section>
         <section id="about">
-            <div>
-                <h2>¿Por qué elegir nuestro café?</h2>
-                <p>Seleccionamos granos de origen ético y los tostamos artesanalmente para ofrecerte un café con cuerpo, aroma y frescura incomparables.</p>
-                <p>Disfruta de una experiencia auténtica en cada sorbo.</p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-content">
-                        <img src="images/coffee-pack.png" alt="Granos de café en empaque">
-                        <h3>Tostado Artesanal</h3>
-                        <p>Cada lote se tuesta a mano para conservar el carácter único de cada grano.</p>
-                    </div>
+            <div class="container">
+                <div class="about-txt">
+                    <h2>¿Por qué elegir nuestro café?</h2>
+                    <p>Seleccionamos granos de origen ético y los tostamos artesanalmente para ofrecerte un café con cuerpo, aroma y frescura incomparables.</p>
+                    <p>Disfruta de una experiencia auténtica en cada sorbo.</p>    
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="images/coffee-plant.png" alt="Planta de café">
-                        <h3>Granos de Origen Ético</h3>
-                        <p>Trabajamos con caficultores que cultivan con respeto por la tierra y las personas.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="images/coffee-pack.png" alt="Granos de café en empaque">
+                            <h3>Tostado Artesanal</h3>
+                            <p>Cada lote se tuesta a mano para conservar el carácter único de cada grano.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="images/latte-art.png" alt="Latte art en taza">
-                        <h3>Sabor Inolvidable</h3>
-                        <p>Una mezcla perfecta de intensidad y suavidad que deleita todos los sentidos.</p>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="images/coffee-plant.png" alt="Planta de café">
+                            <h3>Granos de Origen Ético</h3>
+                            <p>Trabajamos con caficultores que cultivan con respeto por la tierra y las personas.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="images/latte-art.png" alt="Latte art en taza">
+                            <h3>Sabor Inolvidable</h3>
+                            <p>Una mezcla perfecta de intensidad y suavidad que deleita todos los sentidos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="reserve">
-            <h2>Reserva tu experiencia</h2>
+            <div class="container">
+                <h2>Reserva tu experiencia</h2>
 
-            <form class="reserve-form">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <form class="reserve-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <label for="correo">Correo</label>
-                <input type="email" name="correo" id="correo" required>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required>
 
-                <label for="fecha">Fecha</label>
-                <input type="date" name="fecha" id="fecha" required>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha" required>
 
-                <button type="submit" class="btn-reservar">Reservar</button>
-            </form>
+                    <button type="submit" class="btn-reservar">Reservar</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>@2025 La Tazzina. Todos los derechos reservados.</p>
-        <div>
-            <a href=""><img src="images/x.png" alt="X"></a>
-            <a href=""><img src="images/instagram.png" alt="Instagram"></a>
-            <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+        <div class="social-media">
+            <a href=""><img src="images/x.png" alt="Logotipo de X"></a>
+            <a href=""><img src="images/instagram.png" alt="Logotipo de Instagram"></a>
+            <a href=""><img src="images/facebook.png" alt="Logotipo de Facebook"></a>
         </div>
     </footer>
 </body>
