@@ -217,6 +217,9 @@ body{
 
                     input{
                         height: 30px;
+                        font-weight: bold;
+                        padding: 0 5px;
+                        color: var(--primary-color);
                         border: 3px solid var(--primary-color);
                         border-radius: 5px;
                         margin-bottom: 20px;
@@ -332,6 +335,7 @@ body{
 
                         input{
                             height: 40px;
+                            font-size: 15px;
                         }
                     }
                 }
