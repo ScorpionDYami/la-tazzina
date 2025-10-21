@@ -64,6 +64,24 @@ body{
                     transform: scale(1.05);
                 }
             }
+
+            #theme{
+                border: 1px solid var(--secondary-color);
+                border-radius: 20px;
+                font-family: var(--font-montserrat);
+                color: var(--secondary-color);
+                font-weight: bold;
+                padding: 3px;
+                background-color: transparent;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                    font-weight: bold;
+                    transform: scale(1.05);
+                }
+            }
         }
     }
     main{
