@@ -27,9 +27,10 @@ img{
 }
 
 body.dark-theme{
-    --primary-color: #191109;
+    --primary-color: #130d06;
     --secondary-color: #9c6b49;
 
+    
     #reserve{
         .reserve-form{
             input{
